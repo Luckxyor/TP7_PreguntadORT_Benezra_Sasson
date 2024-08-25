@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/TP7_PreguntadORT_Benezra_Sasson.csproj",
+                "${workspaceFolder}/TP7_PreguntadORT_Benezra_Sasson.generated.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/TP7_PreguntadORT_Benezra_Sasson.csproj",
+                "${workspaceFolder}/TP7_PreguntadORT_Benezra_Sasson.generated.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/TP7_PreguntadORT_Benezra_Sasson.csproj"
+                "${workspaceFolder}/TP7_PreguntadORT_Benezra_Sasson.generated.sln"
             ],
             "problemMatcher": "$msCompile"
         }

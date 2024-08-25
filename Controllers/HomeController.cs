@@ -17,4 +17,16 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult ConfigurarJuego()
+    {
+        Juego.InicializarJuego();
+        ViewBag.ListaDificultades=Juego.ObtenerDificultades();
+        ViewBag.ListaCategorias=Juego.ObtenerCategorias();
+        return View();
+    }
+    public IActionResult Comenzar(string username, int dificultad, int categoria)
+    {
+        
+        return View();
+    }
 }

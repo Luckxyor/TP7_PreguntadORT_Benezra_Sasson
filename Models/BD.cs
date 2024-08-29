@@ -43,10 +43,11 @@ static class BD{
         }
         return ListaPreguntas;
     }
-    public static ObtenerRespuestas(List preguntas){
+    public static List<Pregunta> ObtenerRespuestas(List<Pregunta> preguntas){
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sql= "";
-            ListaPreguntas = db.Query<>(sql, new{}).ToList();
+            //ListaPreguntas = db.Query<>(sql, new{}).ToList();
         }
+        return ListaPreguntas;
     }
 }

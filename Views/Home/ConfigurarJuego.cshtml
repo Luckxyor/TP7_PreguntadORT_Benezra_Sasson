@@ -5,11 +5,14 @@
 <form action='@Url.Action("Comenzar", "Home")' method="post">
     <fieldset>
         <legend>Configurar Juego:</legend>
+        <label>UserName:
+            <input type="text" name="username">
+        </label>
         <label>Dificultad:
             <select name="IdDificultad">
                 <option value="-1">Todas las dificultades</option>
                 @foreach(Dificultad dificultad in ViewBag.ListaDificultades){
-                    <option value="@dificultad.IdDificultad">@dificultad.Nombre</option>
+                    <option value="@dificultad.IdDificultad" name="dificultad">@dificultad.Nombre</option>
                 }
             </select>
         </label>
@@ -17,9 +20,10 @@
             <select name="IdCategoria">
                 <option value="-1">Todas las categorias</option>
                 @foreach(Categoria categoria in ViewBag.ListaCategorias){
-                    <option value="@categoria.IdCategoria">@categoria.Nombre</option>
+                    <option value="@categoria.IdCategoria" name="categoria">@categoria.Nombre</option>
                 }
             </select>
         </label>
     </fieldset>
+    <input type="submit">
 </form>

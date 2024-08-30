@@ -1,3 +1,8 @@
 @{
     ViewData["Title"] = "Juego";
 }
+<h1>@ViewBag.PreguntaElegida.Enunciado</h1>
+
+@foreach(Respuesta respuesta in ViewBag.ListaRespuestas){
+    <button class="btn btn-primary"><a href='@Url.Action("VerificarRespuesta", "Home", new{idRespuesta=respuesta.IdRespuesta})'>@respuesta.Contenido</a></button>
+}

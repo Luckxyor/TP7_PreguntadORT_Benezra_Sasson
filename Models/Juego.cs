@@ -12,7 +12,7 @@ static class Juego{
         username = null;
         puntajeActual=0;
         cantidadPreguntasCorrectas=0;
-        contadorPreguntaActual=1;
+        contadorPreguntaActual=0;
     }
     public static List<Categoria> ObtenerCategorias(){
         return BD.ObtenerCategorias();
@@ -26,12 +26,23 @@ static class Juego{
         Preguntas=BD.ObtenerPreguntas(dificultad, categoria);
     }
     public static Pregunta ObtenerProximaPregunta(){
-        return Preguntas[contadorPreguntaActual];
+        if(contadorPreguntaActual<Preguntas.Count){
+            return Preguntas[contadorPreguntaActual];
+        }
+        else{
+            return null;
+        }
     }
-    public static void ObtenerProximasRespuestas(int idPregunta){
-
+    public static List<Respuesta> ObtenerProximasRespuestas(int idPregunta){
+        return BD.ObtenerRespuestas(idPregunta);
     }
-    public static void VerificarRespuesta(int idPregunta, int idRespuesta){
-
+    public static bool VerificarRespuesta(int idRespuesta){
+        bool EsCorrecto=BD.EsCorrecta(idRespuesta);
+        if(EsCorrecto==true){
+            puntajeActual++;
+            cantidadPreguntasCorrectas++;
+        }
+        contadorPreguntaActual++;
+        return EsCorrecto;
     }
 }

@@ -34,6 +34,8 @@ public class HomeController : Controller
         else{
             ViewBag.PreguntaElegida=PreguntaElegida;
             ViewBag.ListaRespuestas=Juego.ObtenerProximasRespuestas(PreguntaElegida.IdPregunta);
+            ViewBag.Usuario=Juego.username;
+            ViewBag.PuntajeActual=Juego.puntajeActual;
             return View("Juego");
         }
     }

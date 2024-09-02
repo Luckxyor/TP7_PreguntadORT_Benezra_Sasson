@@ -1,8 +1,8 @@
 namespace TP7_PreguntadORT_Benezra_Sasson.Models;
 
 static class Juego{
-    private static string username;
-    private static int puntajeActual;
+    public static string username;
+    public static int puntajeActual;
     private static int contadorPreguntaActual;
     private static int cantidadPreguntasCorrectas;
     private static List<Pregunta> Preguntas;

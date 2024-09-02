@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Qkp3l1JB+ceSkQorLjLL/gs+3uTxVAk1XcqwBgZUJ6g=",
+  "Hash": "BJXJBhUH2M2t3BEzoJfhFoL/y2oggx2YZyIss2WDSnU=",
   "Source": "TP7_PreguntadORT_Benezra_Sasson",
   "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\js\\jquery.min.js",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
-      "RelativePath": "js/site.js",
+      "RelativePath": "js/jquery.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
+    },
+    {
+      "Identity": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\js\\script.js",
+      "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
+      "RelativePath": "js/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\script.js"
     },
     {
       "Identity": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
@@ -300,6 +319,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\sonido\\sonido_ruleta.mp3",
+      "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
+      "RelativePath": "sonido/sonido_ruleta.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sonido\\sonido_ruleta.mp3"
     }
   ]
 }

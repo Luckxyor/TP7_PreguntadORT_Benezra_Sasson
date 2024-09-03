@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BJXJBhUH2M2t3BEzoJfhFoL/y2oggx2YZyIss2WDSnU=",
+  "Hash": "/oCe9RWSolw0i2f/r+pMNFGKHUDsKBFSB+5m1bfLd88=",
   "Source": "TP7_PreguntadORT_Benezra_Sasson",
   "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
   "Mode": "Default",
@@ -53,25 +53,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\js\\jquery.min.js",
-      "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
-      "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
-      "RelativePath": "js/jquery.min.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
     },
     {
       "Identity": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\js\\script.js",
@@ -319,25 +300,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
-    },
-    {
-      "Identity": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\sonido\\sonido_ruleta.mp3",
-      "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
-      "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
-      "RelativePath": "sonido/sonido_ruleta.mp3",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sonido\\sonido_ruleta.mp3"
     }
   ]
 }

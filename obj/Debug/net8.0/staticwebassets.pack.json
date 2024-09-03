@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\js\\jquery.min.js",
-      "PackagePath": "staticwebassets\\js\\jquery.min.js"
-    },
-    {
       "Id": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
@@ -63,10 +59,6 @@
     {
       "Id": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Id": "D:\\Prog2024\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\sonido\\sonido_ruleta.mp3",
-      "PackagePath": "staticwebassets\\sonido\\sonido_ruleta.mp3"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TP7_PreguntadORT_Benezra_Sasson.Microsoft.AspNetCore.StaticWebAssets.props",

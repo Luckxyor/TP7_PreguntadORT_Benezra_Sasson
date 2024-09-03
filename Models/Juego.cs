@@ -7,6 +7,7 @@ static class Juego{
     private static int cantidadPreguntasCorrectas;
     private static List<Pregunta> Preguntas;
     private static List<Respuesta> preguntasxRespuesta;
+    private static int preguntaElegida;
 
     private static void InicializarJuego(){
         username = null;
@@ -26,8 +27,9 @@ static class Juego{
         Preguntas=BD.ObtenerPreguntas(dificultad, categoria);
     }
     public static Pregunta ObtenerProximaPregunta(){
-        if(contadorPreguntaActual<Preguntas.Count){
-            return Preguntas[contadorPreguntaActual];
+        ObtenerPreguntaRandom();
+        if(Preguntas.Count!=0){
+            return Preguntas[preguntaElegida];
         }
         else{
             return null;
@@ -39,10 +41,15 @@ static class Juego{
     public static bool VerificarRespuesta(int idRespuesta){
         bool EsCorrecto=BD.EsCorrecta(idRespuesta);
         if(EsCorrecto==true){
-            puntajeActual++;
+            puntajeActual=puntajeActual+50;
             cantidadPreguntasCorrectas++;
         }
+        Preguntas.RemoveAt(preguntaElegida);
         contadorPreguntaActual++;
         return EsCorrecto;
+    }
+    public static void ObtenerPreguntaRandom(){
+        Random rnd = new();
+        preguntaElegida = rnd.Next(0, Preguntas.Count);
     }
 }

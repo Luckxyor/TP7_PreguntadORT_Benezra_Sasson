@@ -17,6 +17,10 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Tutorial()
+    {
+        return View();
+    }
     public IActionResult ConfigurarJuego()
     {
         ViewBag.ListaDificultades=Juego.ObtenerDificultades();

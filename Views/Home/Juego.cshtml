@@ -1,8 +1,11 @@
 @{
     ViewData["Title"] = "Juego";
 }
-<h1>@ViewBag.PreguntaElegida.Enunciado</h1>
 
-@foreach(Respuesta respuesta in ViewBag.ListaRespuestas){
-    <button class="btn btn-primary"><a href='@Url.Action("VerificarRespuesta", "Home", new{idRespuesta=respuesta.IdRespuesta})'>@respuesta.Contenido</a></button>
-}
+<h5>@ViewBag.Usuario @ViewBag.PuntajeActual</h5>
+<h1>@ViewBag.PreguntaElegida.Enunciado</h1>
+<form Action='@Url.Action("VerificarRespuesta")' method="Post">
+    @foreach(Respuesta respuesta in ViewBag.ListaRespuestas){
+        <button type="sumbit" class="btn btn-primary" name="idRespuesta" value="@respuesta.IdRespuesta"> @respuesta.Contenido</button>
+    }
+</form>

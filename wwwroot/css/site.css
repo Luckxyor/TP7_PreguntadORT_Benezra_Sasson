@@ -14,6 +14,64 @@ body {
   padding: 10px;
 }
 
+/*INICIO NAVEGADOR*/
+
+.main-nav{
+  padding: 2px;
+  position: fixed;
+  width: 60%;
+  background-color: rgba(255, 0, 0, 0.6);
+  border-radius: 15px;
+  top:5px;
+  left: 20%;
+  z-index: 2;
+  transition-property: width;
+  transition-duration: 0.5s;
+}
+.main-nav .ul__nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-nav a{
+  display: inline-block;
+  padding: 2px 3px;
+  border-radius: 15px;
+
+}
+.main-nav .item-nav a{
+  padding: 7px 20px;
+  color: #000;
+  text-decoration: none;
+}
+.main-nav a:hover{
+  background-color: #fffd;
+}
+.ul__nav{ 
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-nav img{
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+}
+
+/*FIN NAVEGADOR*/
+
+header{
+  height: 20vh;
+}
+main h1{
+  font-size: 70px !important;
+}
+main p{
+  font-size: 20px;
+  text-wrap: pretty;
+}
 
 footer {
   margin-top: 10px;

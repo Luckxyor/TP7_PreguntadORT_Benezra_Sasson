@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I8hzVxXX2wnECHmuAEcrXvUs3fdESQlmLLrvX7bp1x0=",
+  "Hash": "0+4/quZtBbOiSQjZVnmZb/8ZyUBbzFd8kKxOaAPpOyI=",
   "Source": "TP7_PreguntadORT_Benezra_Sasson",
   "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TP7_PreguntadORT_Benezra_Sasson\\wwwroot",
       "Source": "TP7_PreguntadORT_Benezra_Sasson",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\css\\site.css",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\favicon.ico",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\img\\logo.png",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\img\\logo.png",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "img/logo.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\js\\script.js",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\js\\script.js",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "js/script.js",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\js\\script.js"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TP7_PreguntadORT_Benezra_Sasson",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48313547\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48313633\\TP7_PreguntadORT_Benezra_Sasson\\wwwroot\\",
       "BasePath": "_content/TP7_PreguntadORT_Benezra_Sasson",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

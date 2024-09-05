@@ -2,17 +2,17 @@
     ViewData["Title"] = "Configurar Juego";
 }
 
-<form action='@Url.Action("Comenzar", "Home")' method="post">
+<form action='@Url.Action("Comenzar", "Home")' method="post" class="Config">
     <fieldset>
         <legend>Configurar Juego:</legend>
         <label>Username:
-            <input type="text" name="username" placeholder="Nombre de Usuario">
+            <input type="text" name="username" placeholder="Nombre de Usuario" required>
         </label>
         <label>Dificultad:
             <select name="dificultad">
                 <option value="-1">Todas las dificultades</option>
                 @foreach(Dificultad dificultad in ViewBag.ListaDificultades){
-                    <option value="@dificultad.IdDificultad">@dificultad.Nombre</option>
+                    <option value="@dificultad.IdDificultad" required>@dificultad.Nombre</option>
                 }
             </select>
         </label>
@@ -20,10 +20,10 @@
             <select name="categoria">
                 <option value="-1">Todas las categorias</option>
                 @foreach(Categoria categoria in ViewBag.ListaCategorias){
-                    <option value="@categoria.IdCategoria">@categoria.Nombre</option>
+                    <option value="@categoria.IdCategoria" required>@categoria.Nombre</option>
                 }
             </select>
         </label>
     </fieldset>
-    <input type="submit">
+    <button class="btn btn-outline-success" type="submit">JUGAR</button>
 </form>

@@ -3,9 +3,13 @@
 }
 
 <h5>@ViewBag.Usuario @ViewBag.PuntajeActual</h5>
-<h1>@ViewBag.PreguntaElegida.Enunciado</h1>
-<form Action='@Url.Action("VerificarRespuesta")' method="Post">
-    @foreach(Respuesta respuesta in ViewBag.ListaRespuestas){
-        <button type="sumbit" class="btn btn-primary" name="idRespuesta" value="@respuesta.IdRespuesta"> @respuesta.Contenido</button>
-    }
-</form>
+<div class="Pregunta">
+    <div class="Enunciado">
+        <h1>@ViewBag.PreguntaElegida.Enunciado</h1>
+    </div>
+    <form Action='@Url.Action("VerificarRespuesta")' method="Post" class="Respuestas">
+        @foreach(Respuesta respuesta in ViewBag.ListaRespuestas){
+            <button type="sumbit" class="btn btn-primary UnaRespuesta" name="idRespuesta" value="@respuesta.IdRespuesta">@respuesta.Contenido</button>
+        }
+    </form>
+</div>

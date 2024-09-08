@@ -47,12 +47,13 @@ public class HomeController : Controller
         }
     }
 
-    public IActionResult VerificarRespuesta(int idRespuesta){
+    public IActionResult VerificarRespuesta(int idPregunta,int idRespuesta){
         if(Juego.VerificarRespuesta(idRespuesta)){
             ViewBag.Mensaje="CORRECTO";
         }
         else{
             ViewBag.Mensaje="INCORRECTO";
+            ViewBag.RespuestaCorrecta=$"La repsuesta correcta era: {BD.CualEraCorrecta(idPregunta)}";
         }
         return View("Respuesta");
     }

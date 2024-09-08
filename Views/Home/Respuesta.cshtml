@@ -1,7 +1,12 @@
 @{
     ViewData["Title"] = "Respuesta";
 }
-<div class="Enunciado">
-<h1>@ViewBag.Mensaje</h1>
+<div class="ContenedorRespuesta">
+    <div class="EsCorrecta">
+        <h1>@ViewBag.Mensaje</h1>
+        @if(ViewBag.RespuestaCorrecta!=null){
+            <p>@ViewBag.RespuestaCorrecta</p>
+        }
+    </div>
+    <a href='@Url.Action("Jugar", "Home")'><button class="btn btn-primary">Siguiente</button></a>
 </div>
-<button class="btn btn-primary"><a href='@Url.Action("Jugar", "Home")'>Siguiente</a></button>

@@ -34,6 +34,9 @@ public class HomeController : Controller
     }
     public IActionResult Jugar(){
         Pregunta PreguntaElegida=Juego.ObtenerProximaPregunta();
+        return RedirectToAction("Preguntas", PreguntaElegida);
+    }
+    public IActionResult Preguntas(Pregunta PreguntaElegida){
         if (PreguntaElegida==null){return View("Fin");}
         else{
             ViewBag.PreguntaElegida=PreguntaElegida;

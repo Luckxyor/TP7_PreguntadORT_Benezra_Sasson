@@ -8,4 +8,10 @@ public class Puntaje{
 
     public Puntaje(){
     }
+    public Puntaje(int? idPuntaje, string username, int puntajeFinal, DateTime horaHecho){
+        IdPuntaje = idPuntaje ?? 0; // Si es null, asigna 0
+        Username = username;
+        PuntajeFinal = puntajeFinal;
+        HoraHecho = horaHecho;
+    }
 }

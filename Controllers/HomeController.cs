@@ -34,17 +34,20 @@ public class HomeController : Controller
     }
     public IActionResult Jugar(){
         Pregunta PreguntaElegida=Juego.ObtenerProximaPregunta();
-        if (PreguntaElegida==null){
-            
-            return RedirectToAction("Puntaje", "FINAL DEL JUEGO");
+        if(PreguntaElegida==null){
+            Juego.FinalJuego();
+            return RedirectToAction("Puntaje", new {mensaje = "FINAL DEL JUEGO"});
         }
         else{
-            ViewBag.PreguntaElegida=PreguntaElegida;
-            ViewBag.ListaRespuestas=Juego.ObtenerProximasRespuestas(PreguntaElegida.IdPregunta);
-            ViewBag.Usuario=Juego.username;
-            ViewBag.PuntajeActual=Juego.puntajeActual;
-            return View("Juego");
+            return RedirectToAction("Preguntas", PreguntaElegida);
         }
+    }
+    public IActionResult Preguntas(Pregunta PreguntaElegida){
+        ViewBag.PreguntaElegida=PreguntaElegida;
+        ViewBag.ListaRespuestas=Juego.ObtenerProximasRespuestas(PreguntaElegida.IdPregunta);
+        ViewBag.Usuario=Juego.username;
+        ViewBag.PuntajeActual=Juego.puntajeActual;
+        return View("Juego");
     }
     public IActionResult Puntaje(string mensaje){
         ViewBag.MensajeFinal=mensaje;
@@ -52,12 +55,13 @@ public class HomeController : Controller
         return View("Puntaje");
     }
 
-    public IActionResult VerificarRespuesta(int idRespuesta){
+    public IActionResult VerificarRespuesta(int idPregunta, int idRespuesta){
         if(Juego.VerificarRespuesta(idRespuesta)){
             ViewBag.Mensaje="CORRECTO";
         }
         else{
             ViewBag.Mensaje="INCORRECTO";
+            ViewBag.RespuestaCorrecta=$"La repsuesta correcta era: {BD.CualEraCorrecta(idPregunta)}";
         }
         return View("Respuesta");
     }

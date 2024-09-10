@@ -66,6 +66,14 @@ static class BD{
         }
         return Correcta;
     }
+    public static string CualEraCorrecta(int idPregunta){
+        string correcta=null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sql= "Select Contenido from Respuestas inner join Preguntas on Respuestas.IdPregunta=Preguntas.IdPregunta where Correcta=1 and Preguntas.IdPregunta=@pIdPregunta";
+            correcta = db.QueryFirstOrDefault<string>(sql, new{pIdPregunta=idPregunta});
+        }
+        return correcta;
+    }
     public static void IngresarPuntaje(Puntaje puntaje){
         string sql= "Insert into Puntajes(Username, PuntajeFinal, HoraHecho) VALUES (@pUsername, @pPuntajeFinal, @pHoraHecho)";
         using(SqlConnection db = new SqlConnection(_connectionString)){

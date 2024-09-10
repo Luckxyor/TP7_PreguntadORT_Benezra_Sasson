@@ -52,4 +52,8 @@ static class Juego{
         Random rnd = new();
         preguntaElegida = rnd.Next(0, Preguntas.Count);
     }
+    public static void FinalJuego(){
+        Puntaje puntaje=new Puntaje(null, username, puntajeActual, DateTime.Now);
+        BD.IngresarPuntaje(puntaje);
+    }
 }

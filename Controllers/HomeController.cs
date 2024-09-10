@@ -34,10 +34,10 @@ public class HomeController : Controller
     }
     public IActionResult Jugar(){
         Pregunta PreguntaElegida=Juego.ObtenerProximaPregunta();
-        return RedirectToAction("Preguntas", PreguntaElegida);
-    }
-    public IActionResult Preguntas(Pregunta PreguntaElegida){
-        if (PreguntaElegida==null){return View("Fin");}
+        if (PreguntaElegida==null){
+            
+            return RedirectToAction("Puntaje", "FINAL DEL JUEGO");
+        }
         else{
             ViewBag.PreguntaElegida=PreguntaElegida;
             ViewBag.ListaRespuestas=Juego.ObtenerProximasRespuestas(PreguntaElegida.IdPregunta);
@@ -46,14 +46,18 @@ public class HomeController : Controller
             return View("Juego");
         }
     }
+    public IActionResult Puntaje(string mensaje){
+        ViewBag.MensajeFinal=mensaje;
+        ViewBag.TopPuntajes=BD.ObtenerPuntajes();
+        return View("Puntaje");
+    }
 
-    public IActionResult VerificarRespuesta(int idPregunta,int idRespuesta){
+    public IActionResult VerificarRespuesta(int idRespuesta){
         if(Juego.VerificarRespuesta(idRespuesta)){
             ViewBag.Mensaje="CORRECTO";
         }
         else{
             ViewBag.Mensaje="INCORRECTO";
-            ViewBag.RespuestaCorrecta=$"La repsuesta correcta era: {BD.CualEraCorrecta(idPregunta)}";
         }
         return View("Respuesta");
     }

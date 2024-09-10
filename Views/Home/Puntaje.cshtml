@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Fin";
+}
+@if(ViewBag.MensajeFinal!=null){
+    <h2>@ViewBag.MensajeFinal</h2>
+}
+
+<h1>TOP 10 PUNTAJES</h1>
+@foreach(Puntaje puntaje in ViewBag.TopPuntajes){
+    <p>@puntaje.Username @puntaje.PuntajeFinal @puntaje.HoraHecho</p><br>
+}

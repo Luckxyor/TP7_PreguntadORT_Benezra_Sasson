@@ -33,13 +33,6 @@ public class HomeController : Controller
         return RedirectToAction("Jugar");
     }
 
-    //SASSÓN tenes que crear una funcion que sea "TerminarJuego", donde en Juego.cshtml tenes que crear un boton para finalizar el juego
-    //Tambien aca abajo en la funcion jugar, en el if Pregunta==null, tenes que copiar todo eso y llevarlo a la nueva funcion
-    //Y obviamente adentro del if hacer un redirectToAction a la funcion nueva
-    //Ahora anda a Juego.cshtml y en Puntaje.cshtml 
-    //Obviamente cuando termines borra TODOS los comentarios que te dejé
-    //Cualquier duda, preguntame en whatsapp, si no te respondo es que me estan ajustando los brackets
-
     public IActionResult Jugar(){
         Pregunta PreguntaElegida=Juego.ObtenerProximaPregunta();
         if(PreguntaElegida==null){
@@ -57,10 +50,10 @@ public class HomeController : Controller
         ViewBag.PuntajeActual=Juego.puntajeActual;
         return View("Juego");
     }
-    public IActionResult Puntaje(string mensaje){
+    public IActionResult ListaPuntaje(string mensaje){
         ViewBag.MensajeFinal=mensaje;
         ViewBag.TopPuntajes=BD.ObtenerPuntajes();
-        return View("Puntaje");
+        return View("ListaPuntajes");
     }
 
     public IActionResult VerificarRespuesta(int idPregunta, int idRespuesta){
@@ -73,4 +66,10 @@ public class HomeController : Controller
         }
         return View("Respuesta");
     }
+      public IActionResult Finn(Pregunta PreguntaElegida){
+        ViewBag.Usuario=Juego.username;
+        ViewBag.PuntajeActual=Juego.puntajeActual;
+        return View("Puntaje");
+    }
+
 }

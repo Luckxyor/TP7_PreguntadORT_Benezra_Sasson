@@ -56,4 +56,5 @@ static class Juego{
         Puntaje puntaje=new Puntaje(username, puntajeActual, DateTime.Now);
         BD.IngresarPuntaje(puntaje);
     }
+
 }

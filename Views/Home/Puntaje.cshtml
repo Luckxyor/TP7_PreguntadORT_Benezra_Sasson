@@ -4,10 +4,7 @@
 @if(ViewBag.MensajeFinal == "FINAL DEL JUEGO"){
     <h2>@ViewBag.MensajeFinal</h2>
 }
-
-<h1>TOP 10 PUNTAJES</h1>
-@foreach(Puntaje puntaje in ViewBag.TopPuntajes){
-    <p>@puntaje.Username @puntaje.PuntajeFinal @puntaje.HoraHecho.ToString("dd/MM/yyyy HH:mm")</p><br>
-}
-
-@* ACA INTENTA CREAR UNA TABLA UTILIZANDO COMO EJEMPLO LO DE ARRIBA, HACELE TAMBIEN UN DISEÑO HONESTO *@
+<div class="mostrarPunt">
+<h5>Usuario:@ViewBag.Usuario</h5>
+ <h4>Tu puntaje:@ViewBag.PuntajeActual</h4>
+ </div>

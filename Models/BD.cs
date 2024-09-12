@@ -78,12 +78,12 @@ static class BD{
         string sql= "Insert into Puntajes(Username, PuntajeFinal, HoraHecho) VALUES (@pUsername, @pPuntajeFinal, @pHoraHecho)";
         using(SqlConnection db = new SqlConnection(_connectionString)){
             db.Execute(sql, new{pUsername=puntaje.Username, pPuntajeFinal=puntaje.PuntajeFinal, pHoraHecho=puntaje.HoraHecho});
-    }
+        }
     }
 
     public static List<Puntaje> ObtenerPuntajes(){
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sql= "SELECT top 10 * FROM Puntajes Order by PuntajeFinal desc ";
+            string sql= "SELECT top 10 Username, PuntajeFinal, HoraHecho FROM Puntajes Order by PuntajeFinal desc";
             ListaPuntajes = db.Query<Puntaje>(sql).ToList();
         }
         return ListaPuntajes;

@@ -53,7 +53,7 @@ static class Juego{
         preguntaElegida = rnd.Next(0, Preguntas.Count);
     }
     public static void FinalJuego(){
-        Puntaje puntaje=new Puntaje(null, username, puntajeActual, DateTime.Now);
+        Puntaje puntaje=new Puntaje(username, puntajeActual, DateTime.Now);
         BD.IngresarPuntaje(puntaje);
     }
 }

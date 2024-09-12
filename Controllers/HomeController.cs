@@ -32,6 +32,14 @@ public class HomeController : Controller
         Juego.CargarPartida(username, dificultad, categoria);
         return RedirectToAction("Jugar");
     }
+
+    //SASSÓN tenes que crear una funcion que sea "TerminarJuego", donde en Juego.cshtml tenes que crear un boton para finalizar el juego
+    //Tambien aca abajo en la funcion jugar, en el if Pregunta==null, tenes que copiar todo eso y llevarlo a la nueva funcion
+    //Y obviamente adentro del if hacer un redirectToAction a la funcion nueva
+    //Ahora anda a Juego.cshtml y en Puntaje.cshtml 
+    //Obviamente cuando termines borra TODOS los comentarios que te dejé
+    //Cualquier duda, preguntame en whatsapp, si no te respondo es que me estan ajustando los brackets
+
     public IActionResult Jugar(){
         Pregunta PreguntaElegida=Juego.ObtenerProximaPregunta();
         if(PreguntaElegida==null){

@@ -2,9 +2,20 @@
     ViewData["Title"] = "Fin";
 }
 @if(ViewBag.MensajeFinal == "FINAL DEL JUEGO"){
-    <h2>@ViewBag.MensajeFinal</h2>
+    <h2 class="mensajeFinal">@ViewBag.MensajeFinal</h2>
 }
-<div class="mostrarPunt">
-<h5>Usuario:@ViewBag.Usuario</h5>
- <h4>Tu puntaje:@ViewBag.PuntajeActual</h4>
- </div>
+<h1>TOP 10 PUNTAJES</h1>
+<table>
+    <tr>
+        <th>Nombre de Usuario</th>
+        <th>Puntaje</th>
+        <th>Hora y Dia hecho</th>
+    </tr>
+    @foreach(Puntaje puntaje in ViewBag.TopPuntajes){
+        <tr>
+            <td>@puntaje.Username</td>
+            <td>@puntaje.PuntajeFinal</td>
+            <td>@puntaje.HoraHecho.ToString("dd/MM/yyyy HH:mm")</td>
+        </tr>
+    }
+</table>

@@ -36,8 +36,7 @@ public class HomeController : Controller
     public IActionResult Jugar(){
         Pregunta PreguntaElegida=Juego.ObtenerProximaPregunta();
         if(PreguntaElegida==null){
-            Juego.FinalJuego();
-            return RedirectToAction("Puntaje", new {mensaje = "FINAL DEL JUEGO"});
+            return RedirectToAction("FinalJuego");
         }
         else{
             return RedirectToAction("Preguntas", PreguntaElegida);
@@ -50,10 +49,10 @@ public class HomeController : Controller
         ViewBag.PuntajeActual=Juego.puntajeActual;
         return View("Juego");
     }
-    public IActionResult ListaPuntaje(string mensaje){
+    public IActionResult Puntaje(string mensaje){
         ViewBag.MensajeFinal=mensaje;
         ViewBag.TopPuntajes=BD.ObtenerPuntajes();
-        return View("ListaPuntajes");
+        return View();
     }
 
     public IActionResult VerificarRespuesta(int idPregunta, int idRespuesta){
@@ -66,10 +65,9 @@ public class HomeController : Controller
         }
         return View("Respuesta");
     }
-      public IActionResult Finn(Pregunta PreguntaElegida){
-        ViewBag.Usuario=Juego.username;
-        ViewBag.PuntajeActual=Juego.puntajeActual;
-        return View("Puntaje");
+    public IActionResult FinalJuego(){
+        Juego.FinalJuego();
+        return RedirectToAction("Puntaje", new {mensaje = "FINAL DEL JUEGO"});
     }
 
 }

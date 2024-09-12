@@ -226,3 +226,31 @@ button a{
   width: 60%;
   box-shadow: 0 0 20px 1px;
 }
+.Tutorial{
+  margin-top: 40px;
+  width: 70%;
+}
+.mensajeFinal{
+  color: #f00;
+  font-size: 50px;
+  margin: 20px;
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+}
+table{
+  width: 65%;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+th{
+  font-size: 40px;
+}
+td{
+  font-size: 30px;
+}
+tr{
+  border-bottom: 1px solid #000 !important;
+}
+tr:first-child{
+  border: none;
+}

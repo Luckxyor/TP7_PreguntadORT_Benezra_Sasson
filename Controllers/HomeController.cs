@@ -49,7 +49,9 @@ public class HomeController : Controller
         ViewBag.PuntajeActual=Juego.puntajeActual;
         return View("Juego");
     }
-    public IActionResult Puntaje(string mensaje){
+    public IActionResult Puntaje(int PuntajeFinal, bool Final, string mensaje){
+        ViewBag.Final=Final;
+        ViewBag.PuntajeFinal=PuntajeFinal;
         ViewBag.MensajeFinal=mensaje;
         ViewBag.TopPuntajes=BD.ObtenerPuntajes();
         return View();
@@ -66,8 +68,7 @@ public class HomeController : Controller
         return View("Respuesta");
     }
     public IActionResult FinalJuego(){
-        Juego.FinalJuego();
-        return RedirectToAction("Puntaje", new {mensaje = "FINAL DEL JUEGO"});
+        int puntajeFinal=Juego.FinalJuego();
+        return RedirectToAction("Puntaje", new {PuntajeFinal=puntajeFinal, Final=true, mensaje = "FINAL DEL JUEGO"});
     }
-
 }

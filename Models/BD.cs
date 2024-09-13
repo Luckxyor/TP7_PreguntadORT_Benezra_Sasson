@@ -83,10 +83,9 @@ static class BD{
 
     public static List<Puntaje> ObtenerPuntajes(){
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sql= "SELECT top 10 Username, PuntajeFinal, HoraHecho FROM Puntajes Order by PuntajeFinal desc";
+            string sql= "SELECT top 10 Username, PuntajeFinal, HoraHecho FROM Puntajes Order by PuntajeFinal desc, HoraHecho asc";
             ListaPuntajes = db.Query<Puntaje>(sql).ToList();
         }
         return ListaPuntajes;
     }
-   
 }

@@ -15,7 +15,7 @@
             <ul class="ul__nav">
                 <a href='@Url.Action("Index", "Home")'><img src="~/img/logo.png" alt="Logo"></a>
                 <li class="item-nav"><a href='@Url.Action("Tutorial", "Home")'>Tutorial</a></li>
-                <li class="item-nav"><a href='@Url.Action("Puntaje", "Home", new {mensaje = "null"})'>Puntajes</a></li>
+                <li class="item-nav"><a href='@Url.Action("Puntaje", "Home", new {Final = false})'>Puntajes</a></li>
                 <li class="item-nav"><a href='@Url.Action("ConfigurarJuego", "Home")'>Configurar Juego</a></li>
             </ul>
         </nav>
@@ -27,7 +27,7 @@
 
     <footer>
         &copy; @DateTime.Now.Year - PreguntadORT hecho por Lucas Benezra y Tomás Sassón
-        <p>Seguinos en GitHub: <a href="https://github.com/Luckxyor"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s"></a><a href="https://github.com/48313547"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s"></a>
+        <p>Seguinos en GitHub: <a href="https://github.com/Luckxyor" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s"></a><a href="https://github.com/48313547" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s"></a>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

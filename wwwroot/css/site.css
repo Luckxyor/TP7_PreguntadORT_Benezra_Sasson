@@ -42,7 +42,7 @@ body {
 .main-nav a{
   display: inline-block;
   padding: 2px 3px;
-  border-radius: 15px;
+  border-radius: 50px;
   font-size: large;
 }
 .main-nav .item-nav a{
@@ -119,11 +119,15 @@ label{
   margin: 45px 5px;
   font-size: 40px;
 }
-.Config button{
+.Config button, .Jugar{
   width: 40%;
   height:50px;
   margin: 10px;
   font-size: 20px;
+}
+.Jugar{
+  width: 30%;
+  margin: 10px;
 }
 .Pregunta{
   text-align: center;
@@ -232,7 +236,7 @@ button a{
 }
 .mensajeFinal{
   color: #f00;
-  font-size: 50px;
+  font-size: 60px;
   margin: 20px;
   text-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
 }
@@ -253,4 +257,10 @@ tr{
 }
 tr:first-child{
   border: none;
+}
+span{
+  font-weight: 900;
+}
+.puntajeFinal{
+  font-size: 40px;
 }

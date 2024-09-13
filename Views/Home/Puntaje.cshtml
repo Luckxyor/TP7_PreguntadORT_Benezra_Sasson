@@ -1,8 +1,9 @@
 @{
     ViewData["Title"] = "Fin";
 }
-@if(ViewBag.MensajeFinal == "FINAL DEL JUEGO"){
+@if(ViewBag.Final == true){
     <h2 class="mensajeFinal">@ViewBag.MensajeFinal</h2>
+    <p class="puntajeFinal">Tu puntaje final fue de:<br><span>@ViewBag.PuntajeFinal</span> Puntos</p>
 }
 <h1>TOP 10 PUNTAJES</h1>
 <table>

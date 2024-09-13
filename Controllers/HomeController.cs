@@ -65,6 +65,8 @@ public class HomeController : Controller
             ViewBag.Mensaje="INCORRECTO";
             ViewBag.RespuestaCorrecta=$"La repsuesta correcta era: {BD.CualEraCorrecta(idPregunta)}";
         }
+        ViewBag.Usuario=Juego.username;
+        ViewBag.PuntajeActual=Juego.puntajeActual;
         return View("Respuesta");
     }
     public IActionResult FinalJuego(){

@@ -265,3 +265,19 @@ span{
 .puntajeFinal{
   font-size: 40px;
 }
+.categoria{
+  position: fixed;
+  width: 200px;
+  height: auto;
+  top:40%;
+  right:0;
+  text-align: center;
+}
+.categoria h6{
+  font-size: 20px !important;
+  font-weight: bold;
+}
+.categoria img{
+  width: 100%;
+  height: auto;
+}

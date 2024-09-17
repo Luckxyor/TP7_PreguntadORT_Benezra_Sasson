@@ -43,6 +43,7 @@ public class HomeController : Controller
         }
     }
     public IActionResult Preguntas(Pregunta PreguntaElegida){
+        ViewBag.CategoriaPregunta=BD.CategoPregunta(PreguntaElegida.IdCategoria);
         ViewBag.PreguntaElegida=PreguntaElegida;
         ViewBag.ListaRespuestas=Juego.ObtenerProximasRespuestas(PreguntaElegida.IdPregunta);
         ViewBag.Usuario=Juego.username;

@@ -12,5 +12,9 @@
         @foreach(Respuesta respuesta in ViewBag.ListaRespuestas){
             <button type="sumbit" class="btn btn-primary UnaRespuesta" name="idRespuesta" value="@respuesta.IdRespuesta">@respuesta.Contenido</button>
         } </form>
+    <div class="categoria">
+        <h6>@ViewBag.CategoriaPregunta.Nombre</h6>
+        <img src="@ViewBag.CategoriaPregunta.Foto">
+    </div>
 
 </div>

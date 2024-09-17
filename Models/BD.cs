@@ -69,7 +69,7 @@ static class BD{
     public static string CualEraCorrecta(int idPregunta){
         string correcta=null;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sql= "Select Contenido from Respuestas inner join Preguntas on Respuestas.IdPregunta=Preguntas.IdPregunta where Correcta=1 and Preguntas.IdPregunta=@pIdPregunta";
+            string sql= "Select Contenido from Respuestas where Correcta=1 and IdPregunta=@pIdPregunta";
             correcta = db.QueryFirstOrDefault<string>(sql, new{pIdPregunta=idPregunta});
         }
         return correcta;
@@ -83,9 +83,17 @@ static class BD{
 
     public static List<Puntaje> ObtenerPuntajes(){
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sql= "SELECT top 10 Username, PuntajeFinal, HoraHecho FROM Puntajes Order by PuntajeFinal desc, HoraHecho asc";
+            string sql= "SELECT top 10 * FROM Puntajes Order by PuntajeFinal desc, HoraHecho asc";
             ListaPuntajes = db.Query<Puntaje>(sql).ToList();
         }
         return ListaPuntajes;
+    }
+    public static Categoria CategoPregunta(int idCategoria){
+        Categoria catego=null;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sql= "SELECT * from Categorias where IdCategoria=@pIdCategoria";
+            catego = db.QueryFirstOrDefault<Categoria>(sql, new{pIdCategoria=idCategoria});
+        }
+        return catego;
     }
 }
